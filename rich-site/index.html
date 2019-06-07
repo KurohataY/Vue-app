@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Puppies and Kittens!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Webフォント -->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor/animate.css">
+    <link rel="stylesheet" href="css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <noscript>
+      <!-- JavaScriptが無効化されている場合の追加スタイルシート -->
+      <link rel="stylesheet" href="css/noscript.css">
+    </noscript>
+  </head>
+  <body data-spy="scroll" data-target="#navbar">
+    <section class="top">
+      <!-- ナビゲーションバー -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <!-- 画面幅が狭い時に表示されるハンバーガーメニュー -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">ナビゲーションの表示切り替え</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <!-- ホームリンク -->
+            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a>
+          </div><!--/.navbar-header -->
+
+          <!-- メニュー -->
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#top">TOP</a></li>
+              <li><a href="#puppies">子犬</a></li>
+              <li><a href="#kittens">子猫</a></li>
+              <li><a href="#prepare">大切なこと</a></li>
+              <li><a href="#gallery">ギャラリー</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+      <!-- 背景とビデオ -->
+      <div id="top" class="top__bg">
+        <video autoplay muted loop class="top__video">
+          <source src="video/top-video.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="top__text-box">
+        <h1 class="top__title">Puppies and Kittens!</h1>
+        <div class="top__catchphrase">世界の子犬と子猫を大切に育てよう</div>
+      </div>
+    </section>
+
+    <!-- 子犬の種類 -->
+    <section id="puppies" class="puppies">
+      <div class="puppies__phrase animated">子犬の種類</div>
+      <h2 class="puppies__title animated">Puppies</h2>
+      <div class="showcase showcase--leftpic container-fluid tabs animated">
+        <div class="row">
+          <!-- サムネイル -->
+          <div class="pull-right col-xs-12 col-sm-6">
+            <ul class="showcase__thumbnails tabs__menu">
+              <li><a href="#puppies-1"><img class="img-rounded" src="img/thumbnail/puppy1.jpg" width="60" height="60" alt="シェパード"></a></li>
+              <li><a href="#puppies-2"><img class="img-rounded" src="img/thumbnail/puppy2.jpg" width="60" height="60" alt="レトリバー"></a></li>
+              <li><a href="#puppies-3"><img class="img-rounded" src="img/thumbnail/puppy3.jpg" width="60" height="60" alt="プードル"></a></li>
+              <li><a href="#puppies-4"><img class="img-rounded" src="img/thumbnail/puppy4.jpg" width="60" height="60" alt="ポメラニアン"></a></li>
+            </ul><!--/.showcase__thumbnails -->
+          </div><!--/.pull-right -->
+
+          <!-- 拡大写真 -->
+          <div class="tabs__content col-xs-12 col-sm-6">
+            <section class="puppies-1">
+              <img class="img-rounded img-responsive" src="img/puppy1.jpg" width="500" height="500" alt="シェパード">
+            </section>
+            <section class="puppies-2">
+              <img class="img-rounded img-responsive" src="img/puppy2.jpg" width="500" height="500" alt="レトリバー">
+            </section>
+            <section class="puppies-3">
+              <img class="img-rounded img-responsive" src="img/puppy3.jpg" width="500" height="500" alt="プードル">
+            </section>
+            <section class="puppies-4">
+              <img class="img-rounded img-responsive" src="img/puppy4.jpg" width="500" height="500" alt="ポメラニアン">
+            </section>
+          </div><!--/.tabs__content -->
+
+          <!-- 説明文 -->
+          <div class="tabs__content col-xs-12 col-sm-6">
+            <section id="puppies-1">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">シェパード</h3>
+                <p class="showcase__kind-description">
+                ジャーマン・シェパード・ドッグは、ドイツ原産の犬種。「ドイツの牧羊犬」という意味である。この犬種は知的で��誠心と服従心に富み、訓練を好む性格から種々な作業犬として訓練され、災害救助犬・軍用犬・警察犬・麻薬探知犬など特殊訓練を必要とする作業犬として活用されている。
+                </p>
+              </div>
+            </section>
+            <section id="puppies-2">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">レトリバー</h3>
+                <p class="showcase__kind-description">
+                ゴールデン・レトリバーは、イギリス原産の大型犬である。賢さ及び忠誠心を兼ね備え、穏和な性格の犬種であるためペットとして広く愛好されている。
+                </p>
+              </div>
+            </section>
+            <section id="puppies-3">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">プードル</h3>
+                <p class="showcase__kind-description">
+                プードルは、水中回収犬、鳥獣猟犬や愛玩犬(ペット)として飼育される犬種である。古くからヨーロッパで広くみられ、特にフランスでの人気が高く、「フレンチ・プードル」と呼称されることもある。
+                </p>
+              </div>
+            </section>
+            <section id="puppies-4">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">ポメラニアン</h3>
+                <p class="showcase__kind-description">
+                ポメラニアンは、犬の品種（犬種）の一つ。祖先犬は、スピッツ系に属する他の犬種と同じく、サモエド（ロシアのシベリアを原産としたトナカイの番やカモシカ狩り、そり引きをする犬）であると言われる。ポメラニアンという名前は、原産地のバルト海南岸の、3つの川に囲まれた低地であるポメラニア地方にちなんでいる。
+                </p>
+              </div>
+            </section>
+          </div><!--/.tabs__content -->
+        </div><!--/.row -->
+      </div><!--/.showcase -->
+    </section><!--/.puppies -->
+
+    <!-- 子猫の種類 -->
+    <section id="kittens" class="kittens">
+      <div class="kittens__phrase animated">子猫の種類</div>
+      <h2 class="kittens__title animated">Kittens</h2>
+      <div class="showcase showcase--rightpic container-fluid tabs animated">
+        <div class="row">
+          <!-- サムネイル -->
+          <div class="col-xs-12 col-sm-6">
+            <ul class="showcase__thumbnails tabs__menu">
+              <li><a href="#kittens-1"><img class="img-rounded" src="img/thumbnail/kitten1.jpg" width="60" height="60" alt="アメリカンショートヘア"></a></li>
+              <li><a href="#kittens-2"><img class="img-rounded" src="img/thumbnail/kitten2.jpg" width="60" height="60" alt="スコティッシュフォールド"></a></li>
+              <li><a href="#kittens-3"><img class="img-rounded" src="img/thumbnail/kitten3.jpg" width="60" height="60" alt="ベンガル"></a></li>
+              <li><a href="#kittens-4"><img class="img-rounded" src="img/thumbnail/kitten4.jpg" width="60" height="60" alt="ロシアンブルー"></a></li>
+            </ul><!--/.showcase__thumbnails -->
+          </div><!--/.pull-right -->
+
+          <!-- 拡大写真 -->
+          <div class="tabs__content pull-right col-xs-12 col-sm-6">
+            <section class="kittens-1">
+              <img class="img-rounded img-responsive" src="img/kitten1.jpg" width="500" height="500" alt="アメリカンショートヘア">
+            </section>
+            <section class="kittens-2">
+              <img class="img-rounded img-responsive" src="img/kitten2.jpg" width="500" height="500" alt="スコティッシュフォールド">
+            </section>
+            <section class="kittens-3">
+              <img class="img-rounded img-responsive" src="img/kitten3.jpg" width="500" height="500" alt="ベンガル">
+            </section>
+            <section class="kittens-4">
+              <img class="img-rounded img-responsive" src="img/kitten4.jpg" width="500" height="500" alt="ロシアンブルー">
+            </section>
+          </div><!--/.tabs__content -->
+
+          <!-- 説明文 -->
+          <div class="tabs__content col-xs-12 col-sm-6">
+            <section id="kittens-1">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">アメリカンショートヘア</h3>
+                <p class="showcase__kind-description">
+                アメリカン・ショートヘアは、猫の品種。17世紀にメイフラワー号でアメリカに上陸したネコの子孫とされる。運動能力の高い、大きな脚を持つ中型の猫である。鼻・口の部分はほぼ四角い形をしており、寒さ、湿気、および表皮負傷からそれらを保護するために硬い毛皮を持つ。
+                </p>
+              </div>
+            </section>
+            <section id="kittens-2">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">スコティッシュフォールド</h3>
+                <p class="showcase__kind-description">
+                スコティッシュフォールドは、イギリスにその起源を有する猫の一品種。スコットランドで発見され�����然変異の猫の個体から発生したこの品種は、折れ曲がったその独特の耳を何よりも際立った特徴としている。
+                </p>
+              </div>
+            </section>
+            <section id="kittens-3">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">ベンガル</h3>
+                <p class="showcase__kind-description">
+                ベンガルは、ネコの品種のひとつである。野生のヤマネコと短毛種のイエネコを交配して作られた。原産国はアメリカ。短毛種。頭は比較的小さく耳は比較的大きく、丸みのあるくさび型をしている。鼻は幅広。目は少しつり目気味で、丸い形をしている。
+                </p>
+              </div>
+            </section>
+            <section id="kittens-4">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">ロシアンブルー</h3>
+                <p class="showcase__kind-description">
+                ロシアンブルーは短毛種であり、毛の色はブルー（猫の場合、グレーの被毛を指す）によるソリッド・カラー。また尻尾にゴースト・タビーが見られることもある。アイカラーはグリーン、目の形はラウンド型、体形はフォーリン・タイプである。
+                </p>
+              </div>
+            </section>
+          </div><!--/.tabs__content -->
+        </div><!--/.row -->
+      </div><!--/.showcase -->
+    </section><!--/.kittens -->
+
+    <!-- ペットとくらすために大切なこと -->
+    <section id="prepare" class="prepare">
+      <div class="prepare__phrase animated">ペットとくらすために大切なこと</div>
+      <h2 class="prepare__title animated">Be prepared to keep pets</h2>
+      <div class="container">
+        <div class="row">
+          <!-- その1 -->
+          <div class="card col-md-4 animated">
+            <div class="card__number">1</div>
+            <div class="card__icon">
+              <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+            </div>
+            <div class="card__description">
+              ペットのために、血統書をきちんと発行しましょう。
+            </div>
+          </div><!--/.card -->
+
+          <!-- その2 -->
+          <div class="card col-md-4 animated">
+            <div class="card__number">2</div>
+            <div class="card__icon">
+              <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+            </div>
+            <div class="card__description">
+              ペットはいつも清潔な状態にしてあげま���ょう。
+            </div>
+          </div><!--/.card -->
+
+          <!-- その3 -->
+          <div class="card col-md-4 animated">
+            <div class="card__number">3</div>
+            <div class="card__icon">
+              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="card__description">
+              おしゃれはあなたのエゴかもしれません。
+            </div>
+          </div><!--/.card -->
+        </div><!--/.row -->
+      </div><!--/.container -->
+    </section><!--/.prepare -->
+
+    <!-- ギャラリー -->
+    <section id="gallery" class="gallery">
+      <div class="gallery__phrase animated">ギャラリー</div>
+      <h2 class="gallery__title animated">Gallery</h2>
+      <div class="image-gallery animated">
+        <div>
+          <animal-photo v-bind:photos="photos" />
+        </div>
+        <div>
+          <animal-photo v-bind:photos="photos2" />
+        </div>
+      </div><!--/.image-gallery -->
+    </section><!--/.gallery -->
+    <!-- フッター -->
+    <footer>
+      &copy; 2016 Puppies and Kittens
+    </footer>
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery.waypoints.min.js"></script>
+    <script src="js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="js/vendor/mobile-detect.min.js"></script>
+    
+    <script src="js/main.js"></script>
+    <script src="js/vue-gallery.js"></script>
+  </body>
+</html>

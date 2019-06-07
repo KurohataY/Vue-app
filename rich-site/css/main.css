@@ -1,0 +1,403 @@
+@charset "UTF-8";
+
+html {
+  font-size: 1em; /* 16px */
+  line-height: 1.5; /* 24px */
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+  font-family: 'Droid Serif', YuGothic, '游ゴシック', sans-serif;
+}
+
+
+.animated {
+  /* アニメーションで表示させるため最初は非表示 */
+  opacity: 0;
+}
+
+.navbar {
+  font-family: 'Slabo 27px', YuGothic, '游ゴシック', sans-serif;
+}
+
+
+.showcase {
+  /* 左右中央に置く */
+  margin: 0 auto;
+
+  width: 88%;
+  max-width: 940px;
+}
+
+.showcase__details {
+  /* 左右中央に置く */
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 460px;
+}
+
+.showcase__kind-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.showcase__kind-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+.card {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.card__number,
+.card__icon {
+  font-size: 2.5rem;
+}
+
+.card__description {
+  /* 左右中央に置く */
+  margin: 0 auto;
+
+  font-size: 1.3125rem;
+  width: 80%;
+}
+
+
+.image-gallery {
+  /* 左右中央に置く */
+  margin: 0 auto;
+  text-align: center;
+
+  width: 90%;
+  max-width: 1024px;
+}
+
+.image-gallery__item {
+  /* 横に並ぶようにする */
+  display: inline-block;
+
+  /* width, heightがborderを含んだサイズになるようにする */
+  box-sizing: border-box;
+
+  width: 120px;
+  height: 120px;
+
+  /* 白い枠をつける */
+  border: 8px solid #fff;
+
+  /* 影をつける */
+  box-shadow: 4px 4px 6px 1px #ccc;
+
+  margin-left: 9px;
+  margin-right: 9px;
+  margin-bottom: 18px;
+
+  /* 0.1秒かけて値を変化させるエフェクト */
+  -webkit-transition: -webkit-transform .1s;
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s;
+}
+
+.image-gallery__item:hover {
+  /* 1.1倍に拡大 */
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.image-gallery__img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.top {
+  /* 子要素でposition:absoluteを使うため必要 */
+  position: relative;
+}
+
+.top, .top__bg {
+  /* 画面いっぱいに広げる */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.top__title {
+  margin-bottom: 10px;
+  font-size: 4rem;
+  line-height: 77px;
+  letter-spacing: 4px;
+}
+
+.top__catchphrase {
+  font-size: 0.9rem;
+}
+
+.top__bg {
+  /* .topと同じ左上位置に置く */
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  /* 背景画像を画面いっぱいに置く */
+  background-color: #fff;
+  background-image: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.top__video {
+  /* モバイル（デフォルト）では非表示 */
+  display: none;
+
+  /* 動画を画面いっぱいに表示 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.top__text-box {
+  /* 上下中央に置く */
+  position: relative;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+
+  font-weight: 100;
+}
+
+.puppies {
+  padding-top: 82px;
+  padding-bottom: 92px;
+
+  /* 上から重ねる順に指定 */
+  background: url(../img/puppies-bg-large.png), url(../img/puppies-bg-small.png), #f0faf2;
+}
+
+.puppies__phrase,
+.kittens__phrase,
+.prepare__phrase,
+.gallery__phrase {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.79px;
+}
+
+.puppies__title,
+.kittens__title,
+.prepare__title,
+.gallery__title {
+  margin-bottom: 37px;
+  text-align: center;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+}
+
+.kittens {
+  padding-top: 82px;
+  padding-bottom: 92px;
+
+  /* 上から重ねる順に背景を指定 */
+  background: url(../img/kittens-bg-large.png), url(../img/kittens-bg-small.png), #fcecf5;
+}
+
+.prepare {
+  padding-top: 82px;
+  padding-bottom: 44px;
+  background-color: #D1EDFB;
+}
+
+.gallery {
+  padding-top: 82px;
+  padding-bottom: 92px;
+  background-color: #FAF7F0;
+  background-image: -webkit-linear-gradient(
+    top left,
+    #f0faf2,
+    #f0faf2 50%,
+    #fcecf5 50%,
+    #fcecf5
+  );
+  background-image: linear-gradient(
+    to bottom right,
+    #f0faf2,
+    #f0faf2 50%,
+    #fcecf5 50%,
+    #fcecf5
+  );
+}
+
+footer {
+  padding: 50px 0;
+  background-color: #fafaf3;
+  text-align: center;
+}
+
+
+/*
+ * 子犬、子猫の種類で使うタブ - ここから
+ */
+/* ulのデフォルトスタイルを消去 */
+.tabs__menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* タブの基本スタイル */
+.tabs__menu li {
+  display: inline-block;
+  margin-bottom: 12px;
+  opacity: 0.5;
+
+  /* 各プロパティをふわっと変える演出 */
+  -webkit-transition: all .15s;
+  transition: all .15s;
+}
+.tabs__menu a {
+  display: block;
+  color: #557F95;
+  text-decoration: none;
+}
+
+/* 非選択のタブにマウスを乗せたら色を変える */
+.tabs__menu li:not(.active):hover {
+  opacity: 0.7;
+}
+
+/* 選択中のタブ */
+.tabs__menu .active {
+  opacity: 1;
+}
+.tabs__menu .active a {
+  color: #3F4548;
+}
+
+/* 各タブのコンテンツはデフォルトで非表示 */
+.tabs__content section {
+  display: none;
+}
+
+.tabs__content section.active {
+  display: block;
+}
+/*
+ * 子犬、子猫の種類で使うタブ - ここまで
+ */
+
+
+/*
+ * Magnific Popupのフェードイン・フェードアウト - ここから
+ */
+/* オーバーレイする背景 初期状態 */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* オーバーレイする背景 開始時アニメーション */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* オーバーレイする背景 終了時アニメーション */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* コンテンツ 初期状態 */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* コンテンツ 開始時アニメーション */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* コンテンツ 終了時アニメーション */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+/*
+ * Magnific Popupのフェードイン・フェードアウト - ここまで
+ */
+
+
+/* Bootstrapのsm以上の表示幅で適用されるスタイル */
+@media (min-width: 768px) {
+  .top__catchphrase {
+    font-size: 1.125rem;
+  }
+
+  .puppies__title,
+  .kittens__title,
+  .prepare__title,
+  .gallery__title {
+    font-size: 4rem;
+  }
+
+  .puppies__phrase,
+  .kittens__phrase,
+  .prepare__phrase,
+  .gallery__phrase {
+    font-size: 1.5rem;
+  }
+
+  .image-gallery__item {
+    width: 192px;
+    height: 192px;
+    border: 16px solid #fff;
+    box-shadow: 8px 8px 12px 1px #ccc;
+  }
+
+  .card__number,
+  .card__icon {
+    font-size: 4rem;
+  }
+
+  .showcase--leftpic .showcase__thumbnails {
+    text-align: left;
+  }
+  .showcase--rightpic .showcase__thumbnails {
+    text-align: right;
+  }
+
+  .showcase--rightpic .showcase__kind-name {
+    text-align: right;
+  }
+
+  .showcase__details {
+    max-width: 320px;
+  }
+  .showcase--leftpic .showcase__details {
+    margin: 0 auto 0 0;
+  }
+  .showcase--rightpic .showcase__details {
+    margin: 0 0 0 auto;
+  }
+}
+
+/* 印刷用スタイル */
+@media print {
+  .animated {
+    /* すべて表示 */
+    opacity: 1;
+  }
+}

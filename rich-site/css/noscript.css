@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.top__bg {
+  background-image: url(../video/top-video-still.jpg);
+}
+
+.tabs__content section {
+  /* すべて表示 */
+  display: block;
+}
+
+.animated {
+  /* すべて表示 */
+  opacity: 1;
+}
